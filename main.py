@@ -1,4 +1,5 @@
 from create_droid_batch import create_droid_batch
+from batchesprinter import batchesprinter
 def main():
     droid_batches = []
     
@@ -18,7 +19,7 @@ def main():
             droid_batch = create_droid_batch()
             droid_batches.append(droid_batch)
         elif user_choice == "2":
-            print(droid_batches)
+            batchesprinter(droid_batches)
         elif user_choice == "3":
             exit()
         else:

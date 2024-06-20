@@ -1,5 +1,5 @@
 from create_droid_batch import create_droid_batch
-from batchesprinter import batchesprinter
+from edit_droid_batch import edit_droid_batch
 def main():
     droid_batches = []
     
@@ -9,8 +9,9 @@ def main():
         print("")
         print("Wybierz jedną z opcji:")
         print("1. Dodaj nową partię droidów")
-        print("2. Wyświetl wszystkie partie droidów")
-        print("3. Wyjdź z programu")
+        print("2. Edytuj partię droidów")
+        print("3. Wyświetl wszystkie partie droidów")
+        print("4. Wyjdź z programu")
         print("")
 
         user_choice = input("Wybierz opcję: ")
@@ -19,8 +20,10 @@ def main():
             droid_batch = create_droid_batch()
             droid_batches.append(droid_batch)
         elif user_choice == "2":
-            batchesprinter(droid_batches)
+            edit_droid_batch(droid_batches)
         elif user_choice == "3":
+            print(droid_batches)
+        elif user_choice == "4":
             exit()
         else:
             print("Niepoprawny wybór")

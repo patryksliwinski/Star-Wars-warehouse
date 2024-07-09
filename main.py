@@ -31,9 +31,8 @@ def main():
             print("Partie droidów zostały wczytane z pliku.")
         elif user_choice == "3":
             edit_droid_batch(droid_batches)
-            batchesprinter(droid_batches)
         elif user_choice == "4":
-            print(droid_batches)
+            batchesprinter(droid_batches)
         elif user_choice == "5":
             if file_path is None:
                 file_path = input("Podaj ścieżkę do pliku CSV: ")

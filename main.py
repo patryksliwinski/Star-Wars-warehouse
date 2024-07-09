@@ -1,6 +1,7 @@
 from create_droid_batch import create_droid_batch
 from edit_droid_batch import edit_droid_batch
 from load_and_save_batches import save_batches_to_csv, load_batches_from_csv
+from batchesprinter import batchesprinter
 
 def main():
     droid_batches = []
@@ -30,6 +31,7 @@ def main():
             print("Partie droidów zostały wczytane z pliku.")
         elif user_choice == "3":
             edit_droid_batch(droid_batches)
+            batchesprinter(droid_batches)
         elif user_choice == "4":
             print(droid_batches)
         elif user_choice == "5":

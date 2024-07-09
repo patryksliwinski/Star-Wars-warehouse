@@ -11,7 +11,7 @@ def load_batches_from_csv(file_path):
                 row['software_version'] = float(row['software_version'])
                 batches.append(row)
     except FileNotFoundError:
-        print(f"File {file_path} not found. Starting with an empty list.")
+        print(f"Nie można znaleźć pliku {file_path}.")
     return batches
 
 def save_batches_to_csv(file_path, batches):
